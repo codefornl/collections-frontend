@@ -1,0 +1,28 @@
+<ng-container *ngIf="usecase">
+    <ng-container *ngIf="detailed; else compact">
+        <div class="project-detail__image"  [ngStyle]="{'background-image': 'url(' + usecase.image + ')'}">
+            <div class="project-detail__overlay">
+                <h1 class="project-detail__title">{{usecase.name}}</h1>
+                <h2 class="project-detail__location">{{usecase.organisation}} <span *ngIf="usecase.country">({{usecase.country}})</span></h2>
+            </div>
+        </div>
+        <div class="card-content">
+            <ng-container *ngIf="detailed">
+                <p class="introduction">{{usecase.teaser}}</p>
+                <p>{{usecase.description}}</p>
+                <a [href]="usecase.website" class="project-detail__website">{{usecase.website}}</a>
+            </ng-container>
+        </div>
+    </ng-container>
+</ng-container>
+<ng-template #compact>
+    <div class="card-header">
+        <img [alt]="usecase.name" class="card-image" [src]="usecase.image">
+    </div>
+    <div class="card-content">
+        <div class="card-title"><a [href]="'cbase/' + parent + '/usecase/' + usecase.slug">{{usecase.name}}</a></div>
+        <div class="card-subtitle">{{usecase.organisation}}</div>
+    </div>
+</ng-template>
+
+

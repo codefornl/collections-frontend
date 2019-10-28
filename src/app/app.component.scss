@@ -1,0 +1,70 @@
+:host {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #74C7A8;
+    color: white;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    //max-width: 960px;
+    flex-direction: column;
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+
+  
+
+footer {
+  background: #444;
+}
+.footer__text {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+      padding-bottom: 10px;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  padding-bottom: 40px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
+}

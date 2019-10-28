@@ -61,6 +61,13 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "nl": {
+              "aot": true,
+              "outputPath": "dist/clarity-nl/",
+              "i18nFile": "src/locale/messages.nl.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "nl"
             }
           }
         },
@@ -72,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "clarityNg:build:production"
+            },
+            "nl": {
+              "browserTarget": "clarityNg:build:nl"
             }
           }
         },
