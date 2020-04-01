@@ -9,10 +9,10 @@ import { Cbase } from '../../../models';
 
 export class CollectionDetailComponent {
   @Input() item: Cbase;
-  @Input() max: number = 120;
+  @Input() max = 120;
 
-  getImageUrl (item: Cbase) {
-    const baseUrl = "https://img.codefor.nl?url=";
+  getImageUrl(item: Cbase) {
+    const baseUrl = 'https://img.codefor.nl?url=';
     if (item.image) {
       return baseUrl + encodeURIComponent(item.image);
     }
@@ -20,9 +20,9 @@ export class CollectionDetailComponent {
   }
 
   urlify(text: string) {
-    var urlRegex = /(https?:\/\/[^\s]+)/g;
-    return text.replace(urlRegex, function(url) {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    return text.replace(urlRegex, (url) => {
         return '<a href="' + url + '">' + url + '</a>';
-    })
+    });
   }
 }

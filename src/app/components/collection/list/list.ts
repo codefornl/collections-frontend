@@ -11,12 +11,12 @@ export class CollectionListComponent implements OnInit {
   items: Cbase[];
   constructor(private service: ApiService) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.service.getCbases().subscribe(response => {
-      if(response._embedded){
+      if (response._embedded) {
         this.items = response._embedded.cbase;
       }
-    })
+    });
   }
 
 }

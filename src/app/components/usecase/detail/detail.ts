@@ -9,15 +9,14 @@ import { Usecase } from '../../../models';
 export class UsecaseDetailComponent {
   @Input() parent: string;
   @Input() usecase: Usecase;
-  @Input() detailed: boolean = false;
+  @Input() detailed = false;
   constructor() { }
 
   getImageUrl(item: Usecase) {
-    const baseUrl = "https://img.codefor.nl?url=";
+    const baseUrl = 'https://img.codefor.nl?url=';
     if (item.image) {
-      return baseUrl + encodeURIComponent(item.image) + "&height=426&width=640";
+      return baseUrl + encodeURIComponent(item.image) + '&height=426&width=640';
     }
     return baseUrl + encodeURIComponent('https://clarity.codefor.nl/img/One_black_Pixel.png');
   }
 }
-  

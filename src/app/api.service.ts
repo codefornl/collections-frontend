@@ -1,30 +1,30 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CbasesResponse, CbaseResponse, UsecaseResponse } from './models';
+import { Cbases, Usecase, Cbase } from './models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  cbaseroot = "https://cbase.codefor.nl";
+  cbaseroot = 'https://cbase.codefor.nl';
   httpOptions = {
     headers: new HttpHeaders({
-     'Authorization': "mytoken"
+     Authorization: 'mytoken'
     }),
     withCredentials: true
   };
   constructor(private http: HttpClient) { }
 
-  getCbases(): Observable<CbasesResponse> {
-    return this.http.get(this.cbaseroot + "/cbases", this.httpOptions) as Observable<CbasesResponse>;
+  getCbases(): Observable<Cbases> {
+    return this.http.get(this.cbaseroot + '/cbases', this.httpOptions) as Observable<Cbases>;
   }
 
-  getCbase(id: string): Observable<CbaseResponse> {
-    return this.http.get(this.cbaseroot + "/cbases/" + id, this.httpOptions) as Observable<CbaseResponse>;
+  getCbase(id: string): Observable<Cbase> {
+    return this.http.get(this.cbaseroot + '/cbases/' + id, this.httpOptions) as Observable<Cbase>;
   }
 
-  getUsecase(uid: string): Observable<UsecaseResponse> {
-    return this.http.get(this.cbaseroot + "/usecases/" + uid, this.httpOptions) as Observable<UsecaseResponse>;
+  getUsecase(uid: string): Observable<Usecase> {
+    return this.http.get(this.cbaseroot + '/usecases/' + uid, this.httpOptions) as Observable<Usecase>;
   }
 }

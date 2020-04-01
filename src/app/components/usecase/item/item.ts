@@ -11,16 +11,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UsecaseItemComponent implements OnInit {
   usecase: Usecase;
-  constructor(private route: ActivatedRoute,
+  constructor(
+    private route: ActivatedRoute,
     private service: ApiService,
     private location: Location) { }
 
   ngOnInit() {
-    //var id: string = this.route.snapshot.paramMap.get('id');
-    var uid: string = this.route.snapshot.paramMap.get('uid');
+    const uid: string = this.route.snapshot.paramMap.get('uid');
     this.service.getUsecase(uid).subscribe(c => {
       this.usecase = c;
-      console.log(this.usecase)
     });
   }
 

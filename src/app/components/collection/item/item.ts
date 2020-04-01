@@ -12,12 +12,13 @@ import { Cbase } from '../../../models';
 export class CollectionItemComponent implements OnInit {
 
   item: Cbase;
-  constructor(private route: ActivatedRoute,
+  constructor(
+    private route: ActivatedRoute,
     private service: ApiService,
     private location: Location) { }
 
   ngOnInit() {
-    var id: string = this.route.snapshot.paramMap.get('id');
+    const id: string = this.route.snapshot.paramMap.get('id');
     this.service.getCbase(id).subscribe(c => this.item = c);
   }
 

@@ -1,22 +1,22 @@
-export interface links {
+export interface Links {
     self: {
         href: string;
-    },
+    };
     home: {
         href: string;
-    },
+    };
     filter: {
         href: string;
         templated: boolean;
-    }
+    };
 }
-export interface CbaseLinks extends links {
+export interface CbaseLinks extends Links {
     self_slug: {
         href: string;
-    },
+    };
     cbases: {
         href: string;
-    }
+    };
 }
 
 export interface Cbase {
@@ -33,24 +33,22 @@ export interface Cbase {
     _links: CbaseLinks;
     _embedded: {
         usecase: Usecase[];
-    }
+    };
 }
-export interface CbasesResponse {
-    _links: links,
+export interface Cbases {
+    _links: Links;
     _embedded: {
-        cbase: Cbase[]
-    }
+        cbase: Cbase[];
+    };
 }
 
-export interface CbaseResponse extends Cbase { }
-
-export interface UsecaseLinks extends links {
+export interface UsecaseLinks extends Links {
     self_slug: {
         href: string;
-    },
+    };
     usecases: {
         href: string;
-    }
+    };
 }
 
 export class Usecase {
@@ -72,7 +70,4 @@ export class Usecase {
     contact_name: string;
     contact_email: string;
     _links: UsecaseLinks;
-
 }
-
-export interface UsecaseResponse extends Usecase { }
