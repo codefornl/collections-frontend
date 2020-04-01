@@ -1,11 +1,12 @@
+@import '../../../../styles.scss';
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
 .forward-link {
-    color: #74C7A8;
-    font-family: 'Open Sans', sans-serif;
+    color: $color-secondary;
     font-size: 18px;
     line-height: 1.6;
     margin: 40px;

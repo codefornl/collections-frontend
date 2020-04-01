@@ -1,10 +1,13 @@
+@import '../styles';
 :host {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ccc;
+  font-family: $base-font;
 }
-
+.layout__main-content {
+  min-height: 100vh;
+}
+.main-content {
+  padding: 0 1em;
+}
   .spacer {
     flex: 1;
   }
@@ -13,7 +16,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #74C7A8;
+    background-color: $color-secondary;
     color: white;
   }
 
@@ -38,25 +41,12 @@
     margin-right: 8px;
   }
 
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
-
-  
-
 footer {
   background: #444;
 }
 .footer__text {
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $base-font;
   padding: 10px;
       padding-bottom: 10px;
   font-size: 0.8em;

@@ -6,56 +6,71 @@
         <source>&quot;Clarity - show cases&quot; is a part of the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Clarity Open eGovernment Services<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> project.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="51cc25d91ff4d5b1b36865ca37c535a8e6156181" datatype="html">
         <source>The CLARITY project is a two-year project, funded by the European Commission under the Horizon 2020 framework. Grant Agreement number: 693881</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="410a3f7978d76dbdf6297e628393260a6455d867" datatype="html">
         <source>&quot;Clarity - show cases&quot; is available as an open source application, maintained by Code for NL on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>github.com/codefornl/clarity<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="eeb50234db05ff665dd4e7e8fb2a5c253607a824" datatype="html">
         <source>Please contact <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Code for NL<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> for more information.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="d2091a0036a028e10cf4781f3d35b93035a6b39a" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{cbase._embedded.usecase.length}}"/> show case</source>
+      <trans-unit id="c82bcd1b91ad8ef9ad838452b70bc14081907d01" datatype="html">
+        <source>Organisation</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/cbase/cbase-detail.component.html</context>
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d14d93e7ed17daa7a6b4238a3413056df11e1acb" datatype="html">
+        <source>Collections</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="461384f534641374620f10d0ece388af2d704411" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{item._embedded.usecase.length}}"/> case study</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/collection/detail/detail.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9418b38bdf28b097e38118e8fef4be72449384b8" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{cbase._embedded.usecase.length}}"/> show cases</source>
+      <trans-unit id="fc864284f09f7f7b1973194d3a8c99bdf096486b" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{item._embedded.usecase.length}}"/> case studies</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/cbase/cbase-detail.component.html</context>
+          <context context-type="sourcefile">src/app/components/collection/detail/detail.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="dea5aa1d129008c60a3636b9fd85d3ded1f49553" datatype="html">
         <source>curator</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/cbase/cbase-detail.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="sourcefile">src/app/components/collection/detail/detail.html</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5d6de6cad222bbc66b3d8f83da11f4b9d645702f" datatype="html">
-        <source>All <x id="INTERPOLATION" equiv-text="{{cbase.name}}"/> cases →</source>
+      <trans-unit id="c458094b1c5fa3a4ffdef0b55db5f889f6d71a79" datatype="html">
+        <source>All <x id="INTERPOLATION" equiv-text="{{item.name}}"/> case studies
+                                →</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/cbase/cbase-detail.component.html</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="sourcefile">src/app/components/collection/detail/detail.html</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
     </body>

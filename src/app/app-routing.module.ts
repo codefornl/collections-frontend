@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CbaseListComponent } from './cbase/cbase-list.component';
-import { CbaseItemComponent } from './cbase/cbase-item.component';
-import { UsecaseItemComponent } from './usecase/usecase-item.component';
+import { CollectionListComponent } from './components/collection/list/list';
+import { CollectionItemComponent } from './components/collection/item/item';
+import { UsecaseItemComponent } from './components/usecase/item/item';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/cbases', pathMatch: 'full' },
-  { path: 'cbase/:id',      component: CbaseItemComponent, pathMatch: 'full' },
-  { path: 'cbase/:id/usecase/:uid',      component: UsecaseItemComponent, pathMatch: 'full' },
-  { path: 'cbases',      component: CbaseListComponent },
+  { path: '', redirectTo: '/collections', pathMatch: 'full' },
+  { path: 'collection/:id',      component: CollectionItemComponent, pathMatch: 'full' },
+  { path: 'collection/:id/usecase/:uid',      component: UsecaseItemComponent, pathMatch: 'full' },
+  { path: 'usecase/:uid',      component: UsecaseItemComponent, pathMatch: 'full' },
+  { path: 'collections',      component: CollectionListComponent },
 ];
 
 @NgModule({

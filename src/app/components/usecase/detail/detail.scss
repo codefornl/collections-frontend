@@ -1,0 +1,54 @@
+@import '../../../../styles.scss';
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.layout__project_list-item-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .project_list-item-top {
+        background: #fff;
+
+        .project__image {
+            width: 100%;
+            padding: 0.5em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+    }
+
+    .project__meta {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        background: #fff;
+        padding: 0.5em;
+
+        .project__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .project__location {
+            font-size: 18px;
+            line-height: 1.6;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 15px;
+            flex: 1 0 auto;
+        }
+    }
+}

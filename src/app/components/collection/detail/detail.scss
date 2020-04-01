@@ -1,0 +1,110 @@
+@import '../../../../styles.scss';
+
+.layout__row:nth-child(2n+1) {
+    background: rgb(250, 250, 250);
+}
+.layout__row {
+    display: flex;
+    padding: 0.5em;
+}
+
+.layout__list-meta {
+    flex: 1;
+
+    .list-summary {
+        background: #fff;
+        margin: 3px;
+        padding: 0.5em;
+
+        .forward-link {
+            color: $color-primary;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 40px;
+            display: block;
+        }
+        .list-summary__title {
+            font-size: 27px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    
+        .list-summary__count {
+            font-size: 18px;
+            line-height: 1.6;
+            color: $color-primary;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    
+        .list-summary__description {
+            line-height: 1.6;
+            color: #505064;
+            a {
+                color: $color-secondary;
+            }
+        }
+        
+        .list-summary__curator {
+            padding-top: 40px;
+            min-height: 120px;
+
+            .curator {
+                position: relative;
+
+                .curator__avatar {
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                
+                .curator__contact {
+                    padding-left: 90px;
+                    .curator__name {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 1.4;
+                        margin-bottom: 2px;
+                    }
+
+                    .curator__badge {
+                        font-size: 18px;
+                        line-height: 1.6;
+                        background: #70C09D;
+                        display: inline-block;
+                        padding: 1px 8px;
+                        color: #fff;
+                        border-radius: 3px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                    }
+
+                    .curator__email {
+                        font-size: 12px;
+                        color: #505064;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout__project-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+
+    .layout__project-list-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        width: 30%;
+        margin: 3px;
+        border: 1px solid rgb(245, 245, 245);
+    }
+}

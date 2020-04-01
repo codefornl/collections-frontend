@@ -1,0 +1,6 @@
+<ng-container *ngIf="items">
+    <div *ngFor="let item of items">
+      <app-collection-detail [item]="item" [max]="3">
+      </app-collection-detail>
+    </div>
+</ng-container>

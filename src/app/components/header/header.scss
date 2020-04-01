@@ -1,0 +1,33 @@
+@import '../../../styles.scss';
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+    padding: 1em;
+}
+
+.nav__logo--background-orange {
+    background: #F7931D;
+    color: white;
+    vertical-align: 11px;
+}
+
+.nav__logo, .nav__menu {
+    font-family: $header-font;
+    color: #666;
+    font-size: 24px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 80px
+}
+
+img {
+    height: 48px;
+}

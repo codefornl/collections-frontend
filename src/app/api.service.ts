@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CbasesResponse, CbaseResponse } from './cbase';
-import { UsecaseResponse } from './usecase';
+import { CbasesResponse, CbaseResponse, UsecaseResponse } from './models';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CbaseService {
+export class ApiService {
   cbaseroot = "https://cbase.codefor.nl";
   httpOptions = {
     headers: new HttpHeaders({

@@ -1,0 +1,13 @@
+<ng-container *ngIf="usecase">
+    <a [href]="'usecase/' + usecase.slug" class="layout__project_list-item-wrapper">
+        <div class="project_list-item-top">
+            <img class="project__image" [src]="getImageUrl(usecase)">
+        </div>
+        <div class="project__meta">
+            <h3 class="project__title">{{usecase.name}}</h3>
+            <h4 class="project__location">{{usecase.organisation}}</h4>
+        </div>
+    </a>
+</ng-container>
+
+

@@ -5,21 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import { CbaseListComponent } from './cbase/cbase-list.component'; 
-import { CbaseDetailComponent } from './cbase/cbase-detail.component';
-import { CbaseItemComponent } from './cbase/cbase-item.component';
+import { CollectionListComponent } from './components/collection/list/list'; 
+import { CollectionDetailComponent } from './components/collection/detail/detail';
+import { CollectionItemComponent } from './components/collection/item/item';
 import localeNl from '@angular/common/locales/nl';
 import localeNlExtra from '@angular/common/locales/extra/nl';
-import { UsecaseItemComponent } from './usecase/usecase-item.component';
-import { UsecaseDetailComponent } from './usecase/usecase-detail.component';
+import { UsecaseItemComponent } from './components/usecase/item/item';
+import { UsecaseDetailComponent } from './components/usecase/detail/detail';
+import { HeaderComponent } from './components/header/header';
+import { SearchComponent } from './components/search/search';
 registerLocaleData(localeNl, 'nl-NL', localeNlExtra);
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    SearchComponent,
     UsecaseDetailComponent,
-    CbaseDetailComponent,
-    CbaseListComponent,
-    CbaseItemComponent,
+    CollectionListComponent,
+    CollectionDetailComponent,
+    CollectionItemComponent,
     UsecaseItemComponent
   ],
   imports: [
