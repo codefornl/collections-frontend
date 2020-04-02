@@ -7,7 +7,7 @@ import { Cbases, Usecase, Cbase } from './models';
   providedIn: 'root'
 })
 export class ApiService {
-  cbaseroot = 'https://cbase.codefor.nl';
+  cbaseroot = 'http://localhost:8000';
   httpOptions = {
     headers: new HttpHeaders({
      Authorization: 'mytoken'

@@ -1,58 +1,41 @@
-@import '../../../styles.scss';
-
-.nav__search {
-    display: inline-block;
-}
-
-:-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-::placeholder {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ccc;
-}
-
-.layout__searchbar {
+.searchbar {
+    /* toggle to debug non supported browsers */
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.searchbar__input {
+  }
+  .searchbar__input {
     font-size: 18px;
     line-height: 1.6;
     border: 2px solid rgba(0, 0, 0, 0.2);
-        border-right-color: rgba(0, 0, 0, 0.2);
-        border-right-style: solid;
-        border-right-width: 2px;
     border-radius: 0;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: 0;
     padding: 10px 15px;
-}
-
-.searchbar__input {
-    min-width: 400px;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: currentColor;
-    -webkit-appearance: none;
-}
-
-.searchbar__button {
-    background: $color-primary;
-    padding: 15px 15px;
+    min-width: 600px;
+    height: 50px;
+  }
+  .searchbar__input:focus {
+    outline: none;
+  }
+  @media only screen and (max-width: 870px) and (min-width: 461px ) {
+    .searchbar__input {
+      min-width: 400px;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .searchbar__input {
+      min-width: 220px;
+    }
+  }
+  .searchbar__button {
+    background: #E15532;
+    padding: 10px 15px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     display: flex;
-}
+    height: 50px;
+  }
+  .searchbar__button img {
+    align-items: center;
+    justify-content: center;
+  }
