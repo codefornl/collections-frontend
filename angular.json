@@ -4,6 +4,14 @@
   "newProjectRoot": "projects",
   "projects": {
     "clarityNg": {
+      "i18n": {
+        "locales": {
+          "nl": {
+            "translation": "src/locale/messages.nl.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -22,7 +30,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -45,7 +53,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -63,10 +70,7 @@
               ]
             },
             "nl": {
-              "aot": true,
-              "outputPath": "dist/clarity-nl/",
               "i18nFile": "src/locale/messages.nl.xlf",
-              "i18nFormat": "xlf",
               "i18nLocale": "nl"
             }
           }
